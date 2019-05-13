@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Home-Dixit Healing Chamber
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.5.0-web/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/Style.css" />
+  </head>
+
+  <body>
+        <div class="gradient">
+    <div class="container">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light"
+        "col-lg-6
+        col-md-6
+        col-sm-12"
+      >
+        <a class="navbar-brand" href="#">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#"
+              >About <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link" href="#">Services</a>
+            <a class="nav-item nav-link" href="#">Updates</a>
+            <a class="nav-item nav-link " href="#">More Info</a>
+            <a class="nav-item nav-link " href="#">Contact</a>
+            <a class="btn btn-group-sm" href="#" role="button" id="btn1"
+                ><b><i class="fas fa-phone-volume"></i>+91 81234567899</b></a
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid full">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="jumbotron">
+            <h4 style="font-family:'Courier New', Courier, monospace";><b>Welcome To</b></h4>
+            <h1 class="display-4">Dixit Healing Chamber</h1>
+            <p class="lead"><b>Homeopathic clinic of Dr.Shravan Dixit is located in Jublie
+                    Hills,Hyderabad.The clinic was established in 2006 and is one of
+                    the most reputed clinic vicinity. Guided by a clear vision..
+                    <a href="#">SEE MORE</a></b>
+              
+            </p>
+            <p class="lead1">
+              <a class="btn btn-group-sm btn-lg" href="#" role="button"
+                ><b>Meet the Doctor</b></a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="inner">
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a
+                class="nav-item nav-link"
+                id="nav-appointment-tab"
+                data-toggle="tab"
+                href="#nav-appointment"
+                role="tab"
+                >Book Appointment</a
+              >
+              <a
+                class="nav-item nav-link"
+                id="nav-enquiry-tab"
+                data-toggle="tab"
+                href="#nav-enquiry"
+                role="tab"
+                >Have an Enquiry?</a
+              >
+            </div>
+            <div class="tab-content">
+              <div
+                class="tab-pane fade show active"
+                id="nav-appointment"
+                role="tabpanel"
+                aria-labelledby="nav-appointment-tab"
+              >
+                <span
+                  style="position:absolute;margin-left: 22px;background-color: white;top:40px;"
+                  >Purpose</span
+                >
+                <select
+                  class="form-control form-control-lg"
+                  style="margin: 10px"
+                >
+                  <option>Consultation</option>
+                </select>
+                <p>
+                  Date:
+                  <input
+                    type="date"
+                    id="datepicker"
+                    onchange="onDateSelected(this)"
+                  />
+                </p>
+                <table class="table table-bordered" id="tblSolts">
+                  <tbody>
+                    <tr>
+                      <th rowspan="3" width="2px">
+                        <i class="fas fa-sun fa-2x" id="logo"><br /> </i>
+                        <p id="morning">MORNING</p>
+                      </th>
+                      <td>10:00 AM</td>
+                      <td style="width:100px" ;>10:30 AM</td>
+                      <td>11:00 AM</td>
+                    </tr>
+                    <tr>
+                      <td>11:30 AM</td>
+                      <td>12:00 PM</td>
+                      <td>12:30 PM</td>
+                    </tr>
+                    <tr>
+                      <td style="width:100px" ;>1:00 PM</td>
+                      <td>1:30 PM</td>
+                      <td>2:00 PM</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="3"  width="2px">
+                        <i class="fas fa-cloud-sun fa-2x" id="logo"></i>
+                        <p id="morning">EVENING</p>
+                      </th>
+                      <td>2:30 PM</td>
+                      <td>3:00 PM</td>
+                      <td>3:30 PM</td>
+                    </tr>
+
+                    <tr>
+                      <td>4:00 PM</td>
+                      <td>4:30 PM</td>
+                      <td>5:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>5:30 PM</td>
+                      <td>6:00 PM</td>
+                      <td>6:30 PM</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="3"  width="2px">
+                        <i class="fas fa-moon fa-2x" id="logo"></i>
+                        <p id="morning">NIGHT</p>
+                      </th>
+                      <td>7:00 PM</td>
+                      <td>7:30 PM</td>
+                      <td>8:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>8:30 PM</td>
+                      <td>9:00 PM</td>
+                      <td >9:30 PM</td>
+                    </tr>
+                    <tr>
+                      <td>10:00 PM</td>
+                      <td>10:30 PM</td>
+                      <td>11:00 PM</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <button type="button" class="btn btn-primary" id="continue">
+                  CONTINUE
+                </button>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-enquiry"
+                role="tabpanel"
+                aria-labelledby="nav-enquiry-tab"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>  
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/appointment.js"></script>
+  </body>
+</html>

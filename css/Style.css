@@ -1,0 +1,112 @@
+body {
+  background: linear-gradient(
+      to right,
+      rgba(12, 12, 12, 0.3),
+      rgba(245, 241, 241, 0.856)
+    ),
+    url("/Images/Pic.jpg");
+  background-size: 100%;
+  opacity: 30%;
+}
+#btn1 {
+  margin-left: 300px;
+  border: 1px solid rgb(12, 12, 12);
+  border-radius: 40px;
+}
+.button {
+  border: 1px solid rgb(13, 200, 233);
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  width: 200px;
+  padding: 2px 3px;
+  float: right;
+  margin-top: 30px;
+  text-align: center;
+}
+.lead {
+  color: white;
+}
+.lead1 {
+  float: left;
+  background: rgb(240, 217, 217);
+  color: black;
+  border-radius: 20px;
+  margin: 20px;
+  cursor: pointer;
+  border: 2px solid rgb(240, 217, 217);
+}
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.inner {
+  width: 450px;
+  border: 1px solid rgb(241, 234, 234);
+  position: absolute;
+  right: 50px;
+  height: 650px;
+  margin: 30px;
+  margin-left: 60px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.form-control {
+  margin: 10px;
+  width: 433.979166px;
+  border-color: rgb(13, 200, 233);
+}
+
+#arrow {
+  float: right;
+  color: rgb(13, 200, 233);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+#continue {
+  margin-left: 100px;
+  width: 250px;
+  padding-top: 12px;
+  background-color: rgb(13, 200, 233);
+}
+#morning {
+  margin-top: 10px;
+  font-size: 12px;
+  margin-left: 20px;
+}
+#logo {
+  margin-left: 25px;
+  margin-top: 26px;
+}
+.disabledSlot {
+  pointer-events: none;
+  text-decoration: line-through;
+  color: gray;
+}
+.jumbotron {
+  background-color: transparent;
+}
+table.table td:hover {
+  background-color: rgb(13, 200, 233);
+  cursor: pointer;
+}
+.display-4 {
+  color: white;
+}
+h4 {
+  color: white;
+}
+span {
+  color: rgb(13, 183, 240);
+}
+.nav-item.nav-link:hover {
+  border-bottom-color: rgb(13, 200, 233);
+}
