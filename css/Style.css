@@ -110,3 +110,7 @@ span {
 .nav-item.nav-link:hover {
   border-bottom-color: rgb(13, 200, 233);
 }
+.fa-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

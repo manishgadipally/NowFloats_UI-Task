@@ -106,15 +106,23 @@
                 >
                   <option>Consultation</option>
                 </select>
-                <p>
-                  Date:
-                  <input
-                    type="date"
-                    id="datepicker"
-                    onchange="onDateSelected(this)"
-                  />
-                </p>
-                <table class="table table-bordered" id="tblSolts">
+                <input type="hidden" id="hdnDateCtrlVal" value=""/>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item" id="btnNavPrev">
+                        <a class="page-link" aria-label="Previous" onclick="onDateSelected(-1)">
+                          <span aria-hidden="true"><i  class="fa fa-angle-left" style="color:rgb(13, 200, 233);"></i></span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" id="dateCtrl" style="width: 380px;text-align: center;"></a></li>
+                      <li class="page-item">
+                        <a class="page-link" aria-label="Next" onclick="onDateSelected(1)">
+                          <span aria-hidden="true"><i class="fa fa-angle-right" style="color:rgb(13, 200, 233);"></i></span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                <table class="table table-bordered" id="tblSolts" style="margin-top: -17px;">
                   <tbody>
                     <tr>
                       <th rowspan="3" width="2px">

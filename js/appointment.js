@@ -1,10 +1,32 @@
-function onDateSelected(dateCntrl) {
+
+$(document).ready(function() {
+  var value = moment(new Date());
+  var formattedDate = "Today (" + value.format("ddd, D MMM") + ")";
+  $("#dateCtrl").text(formattedDate);
+  $("#hdnDateCtrlVal").val(value.format("YYYY MMM DD"));
+  $("#btnNavPrev").addClass("disabled");
+  onDateSelected(0);
+});
+
+function onDateSelected(dateindex) {
+  var dateCtrlValue = $("#hdnDateCtrlVal").val();
+  var dateMoment = moment(dateCtrlValue, "YYYY MMM DD");
+  dateMoment = dateindex >= 0 ? dateMoment.add(dateindex, 'day') : dateMoment.subtract(1, 'day');
+  if(dateMoment.isSame(new Date(), 'day')){
+    $("#dateCtrl").text("Today (" + dateMoment.format("ddd, D MMM") + ")");
+    $("#btnNavPrev").addClass("disabled");
+  }
+  else{
+    $("#dateCtrl").text(dateMoment.format("ddd, D MMM"));
+    $("#btnNavPrev").removeClass("disabled");
+  }
+  $("#hdnDateCtrlVal").val(dateMoment.format("YYYY MMM DD"));
   initializeTable();
   $.ajax({
     url: "data/appointmentslots.json",
     success: function(result) {
       var dateSlot = result.find(function(dt) {
-        var val = new Date(dateCntrl.value);
+        var val = new Date(dateMoment.toDate());
         var formattedDate =
           val.getMonth() + 1 + "/" + val.getDate() + "/" + val.getFullYear();
         return dt.date == formattedDate;
